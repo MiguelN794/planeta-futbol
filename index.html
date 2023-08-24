@@ -1,72 +1,52 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Registrate en mundo futbol</title>
+        <title>Regístrate en Mundo Fútbol</title>
         <link rel="stylesheet" href="styles.css">
     </head>
-
     <body>
-        <header class="survey-form-container">
-            <h1 id="title">Mundo Futbol</h1>
-            <p id="description">Suscribite para todas las novedades con respecto al futbol.</p>
-        </header>
-        <div class="box first">
-            <form class="survey-form">
-                <label for="name">Nombre</label>
-                <input id="name" type="text" placeholder="Nombre Completo" required/>
-            </form>
-        </div>
-        <div class="box first">
-            <form class="survey-form">
-                <label for="email">Email</label>
-                <input id="email" type="email" placeholder="Ingresa tu mail" required/>
-            </form>
-        </div>
-        <div class="box first">
-            <form class="survey-form">
-                <label for="number">Edad</label>
-                <input id="number" type="number" min="18" max="30" placeholder="Edad" required/>
-            </form>
-        </div>
-        <div class="box first-choise">
-            <label for="dropdown">Preferencia de jugador</label>
-            <select id="dropdown" name="Jugador_fav">
-                <option>Messi</option>
-                <option>Maradona</option>
-            </select>
-        </div>
-        <div class="box">
-            <p>Cual de todos estos jugadores son tus favoritos?</p>
-            <form class="survey-form">
-                <label><input type="radio" value="ronaldo" name="player"/>Ronaldo</label>
-                <label><input type="radio" value="ronaldo_nazario" name="player"/>Ronaldo Nazario</label>
-                <label><input type="radio" value="ronaldinho" name="player"/>Ronaldinho</label>
-                <label><input type="radio" value="figo" name="player"/>Luis Figo</label>
-                <label><input type="radio" value="riquelme" name="player"/>J.R.Riquelme</label>
-                <label><input type="radio" value="moreno_martins" name="player"/>Moreno Martins</label>
-            </form>
-        </div>
-        <div class="box">
-            <form class="survey-form">
-                <label>
-                    <p>Mejor goleador de los 90-00</p>
-                </label>
-                <label>
-                    <input type="checkbox" value="riquelme" name="goleador"/>Riquelme
-                </label>
-                <label>
-                    <input type="checkbox" value="burrito_ortega" name="goleador"/>Burrito Ortega
-                </label>
-            </form>
-        </div>
-        <div class="box box-footer">
-            <form class="survey-form">
-                <label>
-                    <p>Cuales son jugadas historicas para vos?</p>
-                </label>
-                <textarea placeholder="Recomendanos jugadas"></textarea>
-                <button type="submit" id="submit">Enviar</button>
-            </form>
-        </div>
+        <h1 id="title">Mundo Fútbol</h1>
+        <p id="description">Suscríbete para todas las novedades con respecto al fútbol.</p>
+        <form id="survey-form">
+            <div>
+                <label id="name-label" for="name">Nombre</label>
+                <input id="name" type="text" placeholder="Nombre Completo" required>
+            </div>
+            <div>
+                <label id="email-label" for="email">Email</label>
+                <input id="email" type="email" placeholder="Ingresa tu mail" required>
+            </div>
+            <div>
+                <label id="number-label" for="number">Edad</label>
+                <input id="number" type="number" min="18" max="30" placeholder="Edad" required>
+            </div>
+            <div>
+                <label for="dropdown">Preferencia de jugador</label>
+                <select id="dropdown" name="jugador_fav">
+                    <option value="messi">Messi</option>
+                    <option value="maradona">Maradona</option>
+                </select>
+            </div>
+            <div>
+                <p>Cual de todos estos jugadores es tu favorito?</p>
+                    <label><input type="radio" value="ronaldo" name="player">Ronaldo</label>
+                    <label><input type="radio" value="nazario" name="player">Ronaldo Nazario</label>
+                    <label><input type="radio" value="dinho" name="player">Ronaldinho</label>
+                    <label><input type="radio" value="figo" name="player">Luis Figo</label>
+                    <label><input type="radio" value="riquelme" name="player">J.R. Riquelme</label>
+                    <label><input type="radio" value="morenom" name="player">Moreno Martins</label>
+            </div>
+            <div>
+                <label><p>Mejor goleador de los 90-00</p></label>
+                <label><input type="checkbox" value="riquelme" name="goleador">Riquelme</label>
+                <label><input type="checkbox" value="burrito" name="goleador">Burrito Ortega</label>
+            </div>
+            <div>
+                <p>¿Cuáles son jugadas históricas para ti?</p>
+                <textarea placeholder="Recomiéndanos jugadas"></textarea>
+            </div>
+            <button type="submit" id="submit">Enviar</button>
+        </form>
     </body>
 </html>
+
